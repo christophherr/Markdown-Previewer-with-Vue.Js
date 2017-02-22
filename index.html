@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Camper Leaderboard with Vue.js</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="app">
+    <h1 class="title is-1"> Markdown Previewer with Vue.js</h1>
+    <h2 class="title is-2">freeCodeCamp tests are failing</h2>
+    <button class="button is-danger is-outlined  is-medium" v-on:click="clearText">Click here to clear the Editor</button>
+    <div class="content columns">
+        <div class="editor column">
+            <div class="editor-header">
+                <h2 class="title is-2">Editor</h2>
+            </div>
+            <div class="editor-content">
+                <textarea id="editor" v-model="editorContent"></textarea>
+            </div>
+        </div>
+        <div class="preview column">
+            <div class="preview-header">
+                <h2 class="title is-2">Preview</h2>
+            </div>
+            <div id="preview" class="preview-content" v-html="preview"></div>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+<script src="/assets/app.js"></script>
+</body>
+</html>

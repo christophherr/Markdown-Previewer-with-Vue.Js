@@ -1,0 +1,38 @@
+#app {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h1.title,
+h2.title {
+    color: #000;
+    text-align: center;
+}
+
+button {
+    margin-bottom: 5px;
+}
+
+.editor-header {
+    background: blue;
+    padding: 10px;
+}
+
+.preview-header {
+    background: green;
+    padding: 10px;
+}
+
+.editor-content,
+.preview-content {
+    min-height: 500px;
+    background: #e9e9e9;
+    padding: 0 15px;
+}
+
+.editor-content textarea {
+    max-width: 500px;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+}
